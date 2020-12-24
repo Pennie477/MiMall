@@ -28,3 +28,18 @@
   }
 }
 </style>
+<script>
+import HelloWorldVue from "./components/HelloWorld.vue";
+import axios from "axios"
+export default {
+  name: "app",
+  components: {
+    HelloWorldVue
+  },
+  data(){
+    return {
+      age:30
+    }
+  }
+}
+</script>
