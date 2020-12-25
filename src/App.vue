@@ -28,18 +28,25 @@
   }
 }
 </style>
-<script>
-import HelloWorldVue from "./components/HelloWorld.vue";
-import axios from "axios"
+<script> 
+// import axios from "axios"
+import jsonp from "jsonp"
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    HelloWorldVue
+    
   },
   data(){
     return {
-      age:30
+      age: 21
     }
+  },
+  mounted(){
+    let url = "https://www.imooc.com/common/adver-getadver"
+    jsonp(url,(err,res)=>{
+
+    })
   }
+  
 }
 </script>
