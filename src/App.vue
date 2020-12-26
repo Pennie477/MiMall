@@ -1,10 +1,29 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-view></router-view>
+    <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
   </div>
   <router-view />
 </template>
+<script> 
+import jsonp from "jsonp"
+export default {
+  name: 'app',
+  components: {
+    
+  },
+  data(){
+    return {
+      
+    }
+  },
+  mounted(){
+    
+  }
+  
+}
+</script>
 
 <style lang="less">
 #app {
@@ -28,25 +47,3 @@
   }
 }
 </style>
-<script> 
-// import axios from "axios"
-import jsonp from "jsonp"
-export default {
-  name: 'app',
-  components: {
-    
-  },
-  data(){
-    return {
-      age: 21
-    }
-  },
-  mounted(){
-    let url = "https://www.imooc.com/common/adver-getadver"
-    jsonp(url,(err,res)=>{
-
-    })
-  }
-  
-}
-</script>
