@@ -1,15 +1,12 @@
 <template>
   <div id="nav">
     <router-view></router-view>
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
   </div>
   <router-view />
 </template>
 <script> 
-import jsonp from "jsonp"
 export default {
-  name: 'app',
+  name: "app",
   components: {
     
   },
@@ -41,7 +38,7 @@ export default {
     font-weight: bold;
     color: #2c3e50;
 
-    &.router-link-exact-active {
+    &router-link-exact-active {
       color: #42b983;
     }
   }
